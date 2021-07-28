@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dans le <head> -->
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <title>🎮 GamePro 🎮</title>
+  </head>
+  <body>
+  <!- - - - - navbar - - - - ->
+    <nav class="navbar navbar-light bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">GamePro</a>
+      </div>
+    </nav>
+    <!- - - - - navbar - - - - ->
+
+    <!- - - - - Container cards - - - - ->
+
+    <div class="container py-4">
+      <h1 id="titleHone" class="text-warning mt-4">GamePro</h1>
+      <p id="text" class="text-white">Voici mon application permettant de récupéré l'API Rawg afin de présenter tous les jeux vidéos répertoriés sur se site.</p>
+      <p id="text" class="text-white" >Vous pourrez y trouver toutes les informations relatives au jeux comme leur dates de sortie, leurs descriptions et d'éventuelle screenshot.</p>
+        <div id="research-group" class="d-flex salut">
+          <input type="text" id="input-text" class="col-8 form-control bg-dark text-light " placeholder="Rechercher un jeu">
+          <div id="valueSearch" class="btn btn-dark text-light ml-4 text-light">rechercher</div>
+        </div>
+        <select id="selected-plat" class="form-select  bg-dark text-light mt-3 mb-3" aria-label="Default select example">
+        </select>
+        
+        <a href="#pagelist"></a>
+       
+  
+        <section id="pageContent"></section>
+
+        <div class="py-5">
+          <div class="row">
+            <!-- DEMO 1 Item-->
+            <div id="card-insert" class="col-sm-6 mb-3 mb-lg-0">
+            <!-- DEMO 1 Item-->
+            </div>
+          </div>
+          <button id="btn-showmore" class="btn btn-danger ">Show more</button>
+
+        </div> 
+ 
+    </div>
+
+    <!--Container cards -->
+
+    <!--Footer-->
+    <footer id="text" class="text-white">Crée par Anthony Charron pour THP Next</footer>
+
+    <!-- En bas du <body> -->
+    <script src="./dist/bundle.js"></script>
+
+  </body>
+</html>
