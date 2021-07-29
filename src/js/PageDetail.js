@@ -9,13 +9,33 @@ const PageDetail = (argument) => {
         .then((response) => response.json())
         .then((response) =>  {
           let { name, released, description, background_image } = response;
-          
+          console.log(response);
           let articleDOM = document.querySelector(".page-detail .article");
           articleDOM.querySelector(".first").innerHTML += `<img src="${background_image}" class="card-img-top" alt="..."></img>`
           articleDOM.querySelector("h1.title").innerHTML = name;
+
+          let allstores = []
+          response.stores.forEach(element => {
+            allstores.push(element.store.name)
+          });
+
+          let allplatforms = []
+          response.platforms.forEach(element => {
+          allplatforms.push(element.platform.name)
+          });
+
+          let allpublishers = []
+          response.publishers.forEach(element => {
+          allpublishers.push(element.name)
+          });
+          
+
+          articleDOM.querySelector("p.platform").innerHTML = allplatforms.join(", ")
           articleDOM.querySelector("p.release-date span").innerHTML = released;
           articleDOM.querySelector("p.description").innerHTML = description;
-        });
+          articleDOM.querySelector("p.allstores").innerHTML = allstores.join(", ");
+          articleDOM.querySelector("p.allpublishers").innerHTML = allpublishers.join(", ");
+         });
     };
 
     fetchGame(`https://api.rawg.io/api/games/${argument}?key=${API_KEY}`)};
@@ -33,11 +53,21 @@ const PageDetail = (argument) => {
             <h1 class="title text-warning"></h1>
             <p class="release-date text-info">Release date : <span></span></p>
             <p class="description text-light"></p>
-            </div>
+            <br>
+            <hr>
+            <h4> Platform <h4>
+            <p class="platform"></p>
+            <hr>
+            <h4> Stores <h4>
+            <p class="allstores"></p>
+            <hr>
+            <h4> Studios <h4>
+            <p class="allpublishers"></p>
+          </div>
         </div>
-          
-        </div>
-      </section>
+      </div>
+    </div>
+  </section>
     `;
     const bar = document.getElementById('input-text');
     const search = document.getElementById('valueSearch');

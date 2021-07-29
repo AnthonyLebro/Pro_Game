@@ -10490,7 +10490,24 @@ body {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.footer {
-  margin-top: 94%;
+footer {
+  width: 100%;
+  margin-top: auto;
   text-align: center;
+}
+footer p {
+  color: #fff;
+}
+
+hr {
+  background-color: #fff;
+}
+
+h4 {
+  color: lightgrey;
+  font-weight: bold;
+}
+
+.white {
+  color: #fff;
 }
