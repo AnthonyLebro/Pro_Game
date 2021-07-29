@@ -1,4 +1,5 @@
 import API_KEY from "../../process";
+
 const PageDetail = (argument) => {
   const preparePage = () => {
     
@@ -16,8 +17,6 @@ const PageDetail = (argument) => {
           articleDOM.querySelector("p.description").innerHTML = description;
         });
     };
-
-    console.log (name , description)
 
     fetchGame(`https://api.rawg.io/api/games/${argument}?key=${API_KEY}`)};
   
