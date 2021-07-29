@@ -8,4 +8,6 @@ En utilisant l'API `RAWG`, cette app affiche plusieurs types de jeu en fonction 
 
 Construite avec un starter `webpack` et en `SPA`.
 
+La clée Api n'est pas masquée par Dotenv de manière volontaire.
+
 ## Auteur: Anthony Charron
