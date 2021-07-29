@@ -56,7 +56,7 @@ const PageList = (argument = "") => {
               })
             });
           });
-          
+
         /* - - - - - - - - - - - - Hover infos - - - - - - - - - - - -  - */
 
         /* -  - - - - - - - - - - - search - -  - - - - - - - - - -  - */  
@@ -89,7 +89,6 @@ const PageList = (argument = "") => {
     bar.style.display="block";
     search.style.display="block";
     hone.style.display="block";
-    textlorem.style.display="block";
     selected.style.display="block";
 
     preparePage();

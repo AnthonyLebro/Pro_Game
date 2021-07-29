@@ -1,9 +1,7 @@
 import dayjs from "dayjs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/style.scss";
-import routes from './routes';
-
-
+import routes from './routes'; 
 
 let pageArgument;
 

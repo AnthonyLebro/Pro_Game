@@ -17,6 +17,8 @@ const PageDetail = (argument) => {
         });
     };
 
+    console.log (name , description)
+
     fetchGame(`https://api.rawg.io/api/games/${argument}?key=${API_KEY}`)};
   
   const render = () => {
@@ -45,7 +47,6 @@ const PageDetail = (argument) => {
     bar.style.display="none";
     search.style.display="none";
     hone.style.display="none";
-    textlorem.style.display="none";
     selected.style.display="none";
 
     preparePage();
