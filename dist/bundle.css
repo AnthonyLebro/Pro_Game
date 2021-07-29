@@ -10499,15 +10499,27 @@ footer p {
   color: #fff;
 }
 
-hr {
-  background-color: #fff;
-}
-
-h4 {
-  color: lightgrey;
-  font-weight: bold;
-}
-
 .white {
   color: #fff;
+}
+
+hr {
+  background-color: #FFC107;
+}
+
+h1 {
+  color: #FFC107;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  color: #FFC107;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: 1px underline #FFC107;
+}
+
+.textalign {
+  text-align: center;
 }

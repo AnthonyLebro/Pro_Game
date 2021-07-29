@@ -55,14 +55,14 @@ const PageDetail = (argument) => {
             <p class="description text-light"></p>
             <br>
             <hr>
-            <h4> Platform <h4>
-            <p class="platform"></p>
+            <h3 class="textalign"> Platform </h3>
+            <p class="platform textalign"></p>
             <hr>
-            <h4> Stores <h4>
-            <p class="allstores"></p>
+            <h3 class="textalign"> Stores </h3>
+            <p class="allstores textalign"></p>
             <hr>
-            <h4> Studios <h4>
-            <p class="allpublishers"></p>
+            <h3 class="textalign"> Studios </h3>
+            <p class="allpublishers textalign"></p>
           </div>
         </div>
       </div>
